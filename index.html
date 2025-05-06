@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Municipalidad Distrital de San Bartolo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navegación fija -->
+  <nav>
+    <a href="https://www.gob.pe/institucion/munisanbartolo/noticias" target="_blank">NOTICIAS</a>
+    <a href="https://www.gob.pe/institucion/munisanbartolo/normas-y-documentos" target="_blank">NORMAS Y DOCUMENTOS</a>
+    <a href="https://www.gob.pe/institucion/munisanbartolo/tramites-y-servicios" target="_blank">TRÁMITES Y SERVICIOS</a>
+    <a href="https://www.transparencia.gob.pe/enlaces/pte_transparencia_enlaces.aspx?id_entidad=10077" target="_blank">PORTAL DE TRANSPARENCIA</a>
+  </nav>
+  
+  <!-- Espaciador para evitar que el nav tape el contenido -->
+  <div class="spacer"></div>
+  
+  <!-- Sección principal -->
+  <div class="hero">
+    <div class="hero-content">
+      <h1>MUNICIPALIDAD DISTRITAL DE SAN BARTOLO</h1>
+      <button onclick="verMas()">Ver más</button>
+    </div>
+  </div>
+  
+  <!-- Sección informativa inferior -->
+  <div id="info" class="info">
+    <div class="info-section">
+      <div class="logo-container">
+        <img src="logo.jpg" alt="Logo Municipalidad de San Bartolo - 70 Aniversario">
+      </div>
+      
+      <div class="info-blocks">
+        <div class="info-block">
+          <h2>Información Institucional</h2>
+          <p>
+            La Municipalidad Distrital de San Bartolo es un órgano de gobierno local de nivel distrital, 
+            promotor del desarrollo local sostenible, con personería jurídica de derecho público y con autonomía 
+            política, económica y administrativa en asuntos de su competencia.
+          </p>
+        </div>
+        
+        <div class="info-block">
+          <h2>Valores Institucionales</h2>
+          <ul class="values-list">
+            <li>Transparencia</li>
+            <li>Responsabilidad</li>
+            <li>Integridad</li>
+            <li>Participación</li>
+            <li>Compromiso social</li>
+          </ul>
+        </div>
+        
+        <div class="info-block">
+          <h2>Nuestros Compromisos</h2>
+          <p>
+            La Municipalidad de San Bartolo trabaja con transparencia y vocación de servicio para construir 
+            un distrito moderno y sostenible. Nuestros ejes de acción priorizan la mejora de la infraestructura 
+            urbana, la seguridad ciudadana, la protección ambiental, el impulso al turismo y el desarrollo 
+            económico local, así como la modernización de los servicios municipales.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Chatbot -->
+  <div class="chatbot-button">
+    <button onclick="abrirChatbot()">Asistente virtual MDSB</button>
+  </div>
+  
+  <div id="chatbot" class="chatbot-container">
+    <div class="chatbot-header">
+      <h3>Asistente virtual MDSB</h3>
+      <button class="close-btn" onclick="cerrarChatbot()">✕</button>
+    </div>
+    <div id="chatbotBody" class="chatbot-body">
+      <p>¡Hola! Soy el asistente virtual de la Municipalidad de San Bartolo.</p>
+      <p>¿En qué puedo ayudarte hoy?</p>
+      <button onclick="mostrarPaso('iniciar')">Iniciar habilitación comercial</button>
+      <button onclick="mostrarPaso('renovar')">Renovar habilitación</button>
+      <button onclick="mostrarPaso('titularidad')">Cambio de titularidad</button>
+      <button onclick="mostrarPaso('requisitos')">Requisitos por tipo de negocio</button>
+    </div>
+  </div>
+  
+  <script src="chatbot.js"></script>
+</body>
+</html>
